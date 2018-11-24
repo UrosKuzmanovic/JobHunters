@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poslovi - JobHunters</title>
+    <link rel="stylesheet" type="text/css" href="css/style-poslovi.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="icon" href="img/favicon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstraptheme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.naziv').click(function () {
+                var id = $(this).attr('id');
+                $('#' + id + '-slide').slideToggle();
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img id="logo-header" src="img/favicon-white.png" height="50px">
+            <h1>JobHunters</h1><br>
+            <label id="hamburger" for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Početna</a></li>
+                        <li class="active"><a href="#"><strong>Poslovi</strong></a></li>
+                        <li><a href="sajam.html">Sajam zapošljavanja</a></li>
+                        <li><a href="prijavi-se.html">Prijavi se</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="meni">
+        <div class="container">
+            <ul>
+                <a href="#it">
+                    <li>IT</li>
+                </a>
+                <a href="#medicina">
+                    <li>Medicina</li>
+                </a>
+                <a href="#ugostiteljstvo">
+                    <li>Ugostiteljstvo</li>
+                </a>
+                <a href="#ekonomija">
+                    <li>Ekonomija</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="poslovi">
+            <div class="kategorije">
+                <h2 id="it">IT</h2>
+                <div class="posao">
+                    <div class="naziv" id="nis">
+                        <h3><img src="img/nis.jpg" alt="nis">
+                            Menadžer za IT poslovne sisteme</h3>
+                    </div>
+                    <div class="opis-slide" id="nis-slide">
+                        <ul>
+                            <li>Imaš VII stepen stručne spreme (IT usmerenja)</li>
+                            <li>Poseduješ najmanje 3 godine radnog iskustva na istim ili sličnim pozicijama</li>
+                            <li>Dobro poznaješ tržište IT softvera i usluga</li>
+                            <li>Poseduješ dobre organizacione i komunikativne sposobnosti (pisane i usmene)</li>
+                            <li>Govoriš engleski jezik
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="posao">
+                    <div class="naziv" id="ipg">
+                        <h3><img src="img/ipg.jpg" alt="ipg">
+                            PHP programer</h3>
+                    </div>
+                    <div class="opis-slide" id="ipg-slide">
+                        <ul>
+                            <li>Važno nam je da:</li>
+                            <ul>
+                                <li>Poznaješ PHP programski jezik</li>
+                                <li>Razumeš pojam MVC i OOP</li>
+                                <li>Koristiš JS/HTML/CSS</li>
+                                <li>Razumeš šta je API</li>
+                            </ul>
+                            <li>Bilo bi dobro da:</li>
+                            <ul>
+                                <li>Poznaješ Laravel framework (v5+), JS framework (VueJS), bootstrap front-end
+                                    framework</li>
+                                <li>Poznaješ Linux</li>
+                                <li>Koristiš GIT</li>
+                                <li>Imaš TDD iskustvo</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="posao">
+                    <div class="naziv" id="sampro">
+                        <h3><img src="img/sampro.jpg" alt="sampro">
+                            .Net Programer</h3>
+                    </div>
+                    <div class="opis-slide" id="sampro-slide">
+                        <ul>
+                            <li>Uslovi za kandidate:</li>
+                            <ul>
+                                <li>Minimum dve godine aktivnog radnog iskustva na razvoju .NET aplikacija</li>
+                                <li>Formalno obrazovanje (fakultetska diploma) iz softverskog inženjerstva ili srodnih
+                                    oblasti</li>
+                                <li>Znanje i radno iskustvo sa:</li>
+                                <ul>
+                                    <li>C#, ASP.NET MVC , jQuery, Bootstrap</li>
+                                    <li>SQL programiranje i razvoj relacionih baza podataka (Microsoft SQL Server
+                                        2008+)</li>
+                                </ul>
+                                <li>Spremnost i sposobnost učenja novih tehnologija i poslovnih područja</li>
+                                <li>Visok stepen odgovornosti i orijentisanosti na učinak u poslu</li>
+                                <li>Znanje engleskog jezika</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="kategorije">
+                <h2 id="medicina">Medicina</h2>
+                <div class="posao">
+                    <div class="naziv" id="mojsilovic">
+                        <h3><img src="img/mojsilovic.jpg" alt="mojsilovic">
+                            Medicinska sestra-tehničar</h3>
+                    </div>
+                    <div class="opis-slide" id="mojsilovic-slide">
+                        <ul>
+                            <li>Radi na pružanju medicinskih usluga korisnicima doma(davanje lekova, injekcija i drugih
+                                terapija, meri pritisak, temperaturu, previja korisnike, i sl.), koje je prepisao
+                                lekar.</li>
+                            <li>Vodi dnevni pregled pruženih medicinskih usluga i obilazi korisnike.</li>
+                            <li>Svakodnevno kontroliše kvalitet i ispravnost opreme koju koristi.</li>
+                            <li>Vodi brigu o higijeni i urednosti radnog prostora u pogledu ispunjavanja
+                                zdravstveno-sanitarnih uslova, kao i propisa i mera bezbednosti i zdravlja na radu.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="posao">
+                    <div class="naziv" id="vega">
+                        <h3><img src="img/vega.jpg" alt="vega">
+                            Diplomirani farmaceut i farmaceutski tehničar</h3>
+                    </div>
+                    <div class="opis-slide" id="vega-slide">
+                        <ul>
+                            <li><strong>Zahtevi:</strong> Potreban farmaceut sa licencom kao i farmaceutski tehničar sa
+                                radnim iskustvom za rad u apoteci.</li>
+                            <li><strong>Uslovi rada:</strong> Promena smena na nedeljnom nivou</li>
+                            <li><strong>Dužnosti:</strong> ​Rad sa pacijentima, prijem robe.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="kategorije">
+                <h2 id="ugostiteljstvo">Ugostiteljstvo</h2>
+                <div class="posao">
+                    <div class="naziv" id="matine">
+                        <h3><img src="img/matine.jpg" alt="matine">
+                            Konobar</h3>
+                    </div>
+                    <div class="opis-slide" id="matine-slide">
+                        <ul>
+                            <li>III/IV stepen stručne spreme</li>
+                            <li>Znanje engleskog jezika</li>
+                            <li>Obavezno radno iskustvo rada u restoranu</li>
+                            <li>Poznavanje hrane i pića, razvijene prodajne veštine</li>
+                            <li>Poznavanje restoranskog poslovanja</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="posao">
+                    <div class="naziv" id="foody">
+                        <h3><img src="img/foody.jpg" alt="foody">
+                            Kuriri za dostavu hrane sopstvenim vozilom</h3>
+                    </div>
+                    <div class="opis-slide" id="foody-slide">
+                        <ul>
+                            <li>Minimum SSS</li>
+                            <li>Aktivan vozač, važeća vozačka dozvola ( B kategorija )</li>
+                            <li>Dobro poznavanje ulica u Beogradu</li>
+                            <li>Odgovornost i pouzdanost</li>
+                            <li>Bez istorije ozbiljnijih saobraćajnih prekršaja</li>
+                            <li>Komunikativan, pozitivan i prijatan u kontaktu sa klijentima</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="posao">
+                    <div class="naziv" id="bigpizza">
+                        <h3><img src="img/bigpizza.jpg" alt="bigpizza">
+                            Pizza majstor</h3>
+                    </div>
+                    <div class="opis-slide" id="bigpizza-slide">
+                        <ul>
+                            <li>Priprema pizza u pica peći na drva</li>
+                            <li>Prijave slati na email ili pozvati na telefon br. 2, od 09-17h.</li>
+                            <li>Vredan, pouzdan i odgovoran.</li>
+                            <li>Redovna primanja i rad u prijatnom okruženju.</li>
+                            <li>Radno iskustvo u pripremi pizza na šamotu.</li>
+                            <li>Strucna sprema: SSS</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="kategorije">
+                <h2 id="ekonomija">Ekonomija</h2>
+                <div class="posao">
+                    <div class="naziv" id="hyundai">
+                        <h3><img src="img/hyundai.jpg" alt="hyundai">
+                            Računovođa</h3>
+                    </div>
+                    <div class="opis-slide" id="hyundai-slide">
+                        <ul>
+                            <li>Školska sprema: VI ili VII stepen stručne spreme – ekonomski smer</li>
+                            <li>Radno iskustvo: minimum 3 (tri) godina radnog iskustva</li>
+                            <li>Poznavanje rada na računaru</li>
+                            <li>Poznavanje engleskog jezika</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="posao">
+                    <div class="naziv" id="hill">
+                        <h3><img src="img/hill.jpg" alt="hill">
+                            Menadžer finansija i računovodstva</h3>
+                    </div>
+                    <div class="opis-slide" id="hill-slide">
+                        <ul>
+                            <li>VSS ekonomskog usmerenja</li>
+                            <li>iskustvo u samostalnom vođenju računovodstva u spoljnotrgovinskoj delatnosti, dok je
+                                poznavanje maloprodaje prednost</li>
+                            <li>samostalnost u pripremi svih izveštaja za državne institucije i interne potrebe</li>
+                            <li>iskustvo u samostalnoj izradi završnih računa</li>
+                            <li>iskustvo u saradnji sa revizijom i finansijskim institucijama</li>
+                            <li>odlično znanje rada u MS Office-u, naročito u Excel-u</li>
+                            <li>odlično poznavnaje engleskog jezika</li>
+                            <li>dobre veštine komunikacije, preciznost i saradljivost</li>
+                            <li>poštovanje rokova, samostalnost i posvećenost u radu</li>
+                            <li>sposobnost organizacije rada i vođenje tima</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="posao">
+                    <div class="naziv" id="atlantic">
+                        <h3><img src="img/atlantic.jpg" alt="atlantic">
+                            Pripravnik u finansijama</h3>
+                    </div>
+                    <div class="opis-slide" id="atlantic-slide">
+                        <ul>
+                            <li>Učenje o kompaniji i drugim sektorima u Atlantic Grupi</li>
+                            <li>Obuka na poslu, asistiranje timu u operativnim zadacima i odgovornostima u oblasti finansijskog izveštavanja (eksterno i interno)</li>
+                            <li>Rad na projektu uz podršku mentora</li>
+                            <li>Učestvovanje u edukacijama i drugim razvojnim aktivnostima u sklopu programa Atlantic Graduate Trainee</li>
+                            <li>Ekonomski fakultet</li>
+                            <li>Student 5. godine ili završene godine studija sa maksimalno 1 godinom iskustva</li>
+                            <li>Dobro poznavanje engleskog jezika</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <h5>JobHunters</h5>
+            <div class="drustvene-mreze">
+                <a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png" height="50px" onmouseover="this.src='img/facebook1.png'"
+                        onmouseout="this.src='img/facebook.png'"></a>
+                <a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png" height="50px"
+                        onmouseover="this.src='img/instagram1.png'" onmouseout="this.src='img/instagram.png'"></a>
+                <a href="http://www.twitter.com" target="_blank"><img src="img/twitter.png" height="50px" onmouseover="this.src='img/twitter1.png'"
+                        onmouseout="this.src='img/twitter.png'"></a>
+            </div>
+            <h5>Developed by Uroš, Marko, Mario &copy;2018</h5>
+        </div>
+    </div>
+</body>
+
+</html>

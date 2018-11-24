@@ -1,0 +1,128 @@
+*{
+    color: #E2E2E2;
+}
+
+body{
+    background-color: #282828 !important;
+}
+
+.header{
+    background: #414141;
+}
+
+.header h1{
+    float: left;
+}
+
+#logo-header{
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+nav.navbar{
+    margin-bottom: 0px;
+    position: relative;
+    float: right;
+}
+
+nav.navbar a{
+    color: #E2E2E2;
+}
+
+nav.navbar li a:hover{
+    background-color: #414141;
+    color: white;
+}
+
+nav.navbar li a:active{
+    color: #E2E2E2;
+    background-color: #414141;
+}
+
+li.dropdown-menu a{
+    color: #414141;
+}
+
+li.dropdown-menu a:hover{
+    color: black;
+}
+
+.footer{
+    height: -200px;
+    padding: 20px;
+    background-color: #414141;
+}
+
+div.drustvene-mreze img{
+    margin: 5px;
+}
+
+#hamburger{
+    font-size: 26px;
+    float: right;
+    display: none;
+}
+
+#toggle{
+    float: right;
+    display: none;
+}
+
+.kontakt{
+    font-size: 18px;
+}
+
+.kontakt img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+#mapa{
+    width: 400px;
+    float: right;
+    position: relative;
+    top: -150px;
+    left: -150px;
+}
+
+@media only screen and (min-width: 771px) and (max-width: 1000px){
+    #mapa{
+        width:300px;
+        float: right;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    .navbar{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar a{
+        border-top: solid 1px #E2E2E2;
+    }
+
+    #hamburger{
+        display: block;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    #hamburger:hover{
+        color: white;
+    }
+
+    #toggle:checked + .navbar{
+        display: block;
+    }
+
+    #mapa{
+        width:300px;
+        float: right;
+        position: unset;
+    }
+}
